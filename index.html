@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business Retreat in Lanzarote | ZCT</title>
+    <meta name="description" content="Transform your vision into an unforgettable business retreat in Lanzarote. Production, marketing, and strategy by ZCT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Hotjar Tracking Code for Business Retreat -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:6706006,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --white: #ffffff;
+            --blueish-grey: #779496;
+            --black: #000000;
+            --dark-cyan: #004449;
+            --old-pink: #c65c5c;
+            --coral: #ff5757;
+            --cream: #fffbf7;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Oranienbaum', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Hero Section with Video */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--dark-cyan);
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.35;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--dark-cyan);
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .zct-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: rgba(255, 87, 87, 0.15);
+            border: 2px solid var(--coral);
+            border-radius: 50px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 5.5rem);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+
+        /* Amazing CTA Button */
+        .cta-button {
+            position: relative;
+            display: inline-block;
+            padding: 1.3rem 3.5rem;
+            background: var(--coral);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 40px rgba(255, 87, 87, 0.3);
+            border: 3px solid var(--coral);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: white;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 60px rgba(255, 87, 87, 0.4);
+            color: var(--coral);
+        }
+
+        .cta-button:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .cta-button:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .cta-button span {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            animation: float 2s ease-in-out infinite;
+            cursor: pointer;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            animation: scroll 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        @keyframes scroll {
+            0% { opacity: 1; top: 10px; }
+            100% { opacity: 0; top: 30px; }
+        }
+
+        /* Intro Section */
+        .intro {
+            min-height: 70vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            padding: 6rem 2rem;
+        }
+
+        .intro-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+
+        .intro-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--cream);
+            opacity: 0.85;
+        }
+
+        .intro-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 2rem;
+            color: var(--dark-cyan);
+            font-weight: 400;
+        }
+
+        .intro p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            line-height: 1.8;
+            color: var(--text-medium);
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Image Section with Video */
+        .image-section {
+            height: 70vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--dark-cyan);
+            opacity: 0.7;
+        }
+
+        .section-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .section-content h3 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-content p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        /* Services with Pricing */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--dark-cyan);
+            font-weight: 400;
+        }
+
+        .services-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            margin-bottom: 4rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--cream);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 68, 73, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--blueish-grey);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 68, 73, 0.15);
+            border-color: var(--blueish-grey);
+        }
+
+        .pricing-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pricing-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: var(--old-pink);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .package-note {
+            font-size: 0.7rem;
+            color: var(--blueish-grey);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .pricing-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-cyan);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .pricing-description {
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark-cyan);
+            margin-bottom: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .price span {
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            font-weight: 400;
+        }
+
+        .price-note {
+            font-size: 0.9rem;
+            color: var(--blueish-grey);
+            margin-bottom: 2rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 0.7rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--old-pink);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Payment Button - Beaming Effect */
+        .pay-button {
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--coral);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 87, 87, 0.4);
+            animation: beam 2s ease-in-out infinite;
+        }
+
+        @keyframes beam {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255, 87, 87, 0.4),
+                           0 0 40px rgba(255, 87, 87, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255, 87, 87, 0.6),
+                           0 0 60px rgba(255, 87, 87, 0.3),
+                           0 0 80px rgba(255, 87, 87, 0.1);
+            }
+        }
+
+        .pay-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: white;
+            transform: translate(-50%, -50%);
+            transition: width 0.5s ease, height 0.5s ease;
+        }
+
+        .pay-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px rgba(255, 87, 87, 0.8),
+                       0 0 80px rgba(255, 87, 87, 0.4);
+            animation: none;
+        }
+
+        .pay-button:hover::before {
+            width: 500px;
+            height: 500px;
+        }
+
+        .pay-button span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .pay-button:active {
+            transform: scale(0.98);
+        }
+
+        .pay-button:hover span {
+            color: var(--coral);
+        }
+
+        /* Featured Card */
+        .featured {
+            border: 3px solid var(--coral);
+            transform: scale(1.05);
+        }
+
+        .featured::before {
+            background: var(--coral);
+        }
+
+        .featured .pricing-badge {
+            background: var(--coral);
+        }
+
+        /* Lanzarote Gallery */
+        .gallery {
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+        }
+
+        .gallery-item {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--old-pink);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .gallery-item:hover::before {
+            opacity: 0.3;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-cyan);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 100svh;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                height: 300px;
+            }
+
+            .featured {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/19927395/19927395-uhd_2730_1440_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="zct-badge">ZCT</div>
+            <h1>Your Retreat in Lanzarote.<br>Fully Handled.</h1>
+            <p class="hero-subtitle">From concept to sold-out. Production. Marketing. Strategy. Done.</p>
+            <a href="#pricing" class="cta-button">
+                <span>See Packages & Pricing</span>
+            </a>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section class="intro">
+        <video class="intro-video" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/20233417/20233417-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="intro-overlay"></div>
+        <div class="intro-content">
+            <h2>You Have the Vision.<br>I Handle Everything.</h2>
+            <p>You're a coach or consultant ready to host a business retreat. But between venue research, marketing funnels, logistics, and running your actual business, it keeps getting pushed back.</p>
+            <p><strong>I live in Lanzarote. I know the island. I'm a marketer.</strong> Let me take this entirely off your plate.</p>
+        </div>
+    </section>
+
+    <section class="image-section">
+        <video class="section-video" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/20244146/20244146-uhd_2730_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <h3>Volcanic Landscapes. Atlantic Horizons.<br>A Retreat That Sells Itself.</h3>
+            <p>Lanzarote isn't just beautiful. It's magnetic.</p>
+        </div>
+    </section>
+
+    <section class="services" id="pricing">
+        <div class="services-container">
+            <h2>Three Ways to Work Together</h2>
+            <p class="services-intro">Choose the package that fits where you are and where you want to go.</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-badge">Production</div>
+                    <div class="package-note">You Organize a Retreat</div>
+                    <h3>Looking to Organize a Retreat in Lanzarote?</h3>
+                    <p class="pricing-description">We handle everything. You show up, teach, and leave the logistics to us.</p>
+                    
+                    <div class="price">€1,700</div>
+                    <p class="price-note">Complete production package</p>
+
+                    <ul class="features-list">
+                        <li>Venue sourcing & negotiation</li>
+                        <li>Accommodation coordination</li>
+                        <li>Local experiences & excursions</li>
+                        <li>Catering & dietary management</li>
+                        <li>Transportation logistics</li>
+                        <li>On-site coordination support</li>
+                    </ul>
+
+                    <button class="pay-button" onclick="handlePayment('production')">
+                        <span>Get Started</span>
+                    </button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="package-note">You Organize a Retreat</div>
+                    <h3>Full Retreat Creation</h3>
+                    <p class="pricing-description">Production + Marketing. We handle everything and fill your seats.</p>
+                    
+                    <div class="price">€4,500</div>
+                    <p class="price-note">Complete retreat package</p>
+
+                    <ul class="features-list">
+                        <li>Everything in Production package</li>
+                        <li>Sales page & funnel design</li>
+                        <li>Email marketing sequences</li>
+                        <li>Social media content strategy</li>
+                        <li>Paid ad campaign setup (Meta/Google)</li>
+                        <li>Landing page optimization</li>
+                        <li>Conversion tracking & reporting</li>
+                    </ul>
+
+                    <button class="pay-button" onclick="handlePayment('full-retreat')">
+                        <span>Book This Package</span>
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-badge">Super Premium</div>
+                    <div class="package-note">You Attend Our 1:1 Retreat</div>
+                    <h3>1:1 Marketing Retreat</h3>
+                    <p class="pricing-description" style="margin-bottom: 2.5rem; line-height: 1.9;">This is as personal as it gets: 5 days in Lanzarote, every strategy, every asset, every decision.<br><br>I'm hands-on with every piece - designing, managing, and implementing your brand so you can skip 5 years of trial and error and step straight into a profitable personal brand.</p>
+                    
+                    <div class="price">€9,700</div>
+                    <p class="price-note" style="margin-bottom: 3rem;">Limited to select clients each year</p>
+
+                    <div style="margin-top: 2.5rem;">
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--old-pink); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; margin-top: 2rem;">Business Planning</h4>
+                        <ul class="features-list" style="margin: 0;">
+                            <li>Complete personal brand business plan - your strategic roadmap</li>
+                            <li>Custom sales strategies tailored to luxury positioning</li>
+                            <li>Revenue model architecture and pricing strategy</li>
+                        </ul>
+
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--old-pink); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; margin-top: 2rem;">Marketing Strategy</h4>
+                        <ul class="features-list" style="margin: 0;">
+                            <li>Every word on your website perfected - conversion-focused copy that sells</li>
+                            <li>Copy & paste pitch templates for media, partnerships, and sales calls</li>
+                            <li>Brand messaging framework and positioning strategy</li>
+                            <li>Content calendar and editorial direction</li>
+                        </ul>
+
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--old-pink); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; margin-top: 2rem;">Marketing Assets - Channels & Socials</h4>
+                        <ul class="features-list" style="margin: 0;">
+                            <li>Brand new luxury website - fully designed, built, and launched</li>
+                            <li>Done-for-you social media graphics suite (15+ templates)</li>
+                            <li>Business cards and email signature with your new brand identity</li>
+                            <li>Custom brand presentation for investor and partnership meetings</li>
+                        </ul>
+
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--old-pink); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; margin-top: 2rem;">Branding & Photography</h4>
+                        <ul class="features-list" style="margin: 0;">
+                            <li>Professional brand photoshoot in Lanzarote's unique locations that will give your new visual assets an editorial twist</li>
+                            <li>Custom logo, typography system, and complete color palette</li>
+                            <li>Brand style guide for consistent visual identity across all touchpoints</li>
+                        </ul>
+                    </div>
+
+                    <button class="pay-button" onclick="handlePayment('marketing-retreat')" style="margin-top: 2.5rem;">
+                        <span>Book Your Retreat</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery">
+        <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/18500874/pexels-photo-18500874.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/5799246/pexels-photo-5799246.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/32767282/pexels-photo-32767282.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/15173368/pexels-photo-15173368.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/32756605/pexels-photo-32756605.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/32767290/pexels-photo-32767290.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ZCT | Lanzarote, Spain</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/message/DB4B5QT3U6RJP1" target="_blank" class="whatsapp-float" aria-label="Contact on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.247 1.405 1.417-5.225-0.321-0.53c-1.331-2.197-2.039-4.73-2.039-7.321 0-7.605 6.195-13.8 13.8-13.8s13.8 6.195 13.8 13.8c0 7.605-6.195 13.8-13.8 13.8zM21.8 18.267c-0.207-0.103-1.227-0.606-1.417-0.675s-0.328-0.103-0.467 0.103c-0.138 0.207-0.536 0.675-0.657 0.813s-0.242 0.155-0.449 0.052c-0.207-0.103-0.873-0.322-1.663-1.026-0.615-0.549-1.030-1.226-1.150-1.433s-0.012-0.319 0.091-0.422c0.093-0.093 0.207-0.242 0.311-0.363s0.138-0.207 0.207-0.345c0.069-0.138 0.035-0.259-0.017-0.363s-0.467-1.127-0.640-1.543c-0.168-0.405-0.340-0.35-0.467-0.357-0.121-0.006-0.259-0.007-0.397-0.007s-0.363 0.052-0.553 0.259c-0.190 0.207-0.726 0.709-0.726 1.729s0.743 2.006 0.847 2.144c0.103 0.138 1.462 2.233 3.542 3.131 0.495 0.213 0.881 0.341 1.182 0.436 0.497 0.158 0.949 0.136 1.307 0.082 0.399-0.060 1.227-0.502 1.400-0.986s0.173-0.898 0.121-0.986c-0.052-0.088-0.190-0.138-0.397-0.242z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll indicator click
+        document.querySelector('.scroll-indicator').addEventListener('click', () => {
+            document.querySelector('.intro').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Payment handler - redirects to Stripe Checkout
+        function handlePayment(packageType) {
+            const paymentLinks = {
+                'production': 'https://buy.stripe.com/6oU6oGcFubOIaEy3p71ck01',
+                'full-retreat': 'https://buy.stripe.com/dRm7sK20QbOI5ke6Bj1ck02',
+                'marketing-retreat': 'https://buy.stripe.com/bJe8wO8pe3ic8wqf7P1ck03'
+            };
+            
+            window.location.href = paymentLinks[packageType];
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.pricing-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
